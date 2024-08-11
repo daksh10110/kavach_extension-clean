@@ -1,0 +1,81 @@
+/* App.css */
+#app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Added to keep the table width fixed */
+  }
+  
+  table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center; /* Centering the content in table cells */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .database-heading {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .person-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Display none to hide the images */
+    display: none;
+  }
+ #add {
+  text-align: center;
+ }
+ #filter {
+  text-align: center;
+ }

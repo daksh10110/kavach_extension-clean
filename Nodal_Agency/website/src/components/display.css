@@ -1,0 +1,19 @@
+/* display.css */
+.person-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .person-table th,
+  .person-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .person-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  

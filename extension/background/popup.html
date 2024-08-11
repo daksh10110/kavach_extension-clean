@@ -1,0 +1,93 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kavach Extension Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    #welcomeContainer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    form input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #editBlocklistButton,
+    #reportButton {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    #reportButton {
+      background-color: red;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    #reportButton:hover {
+      background-color: #b30000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kavach Extension Options</h1>
+  
+  <div id="welcomeContainer">
+    <p>Welcome to the Kavach extension!</p>
+    <p>You can add to or modify the blocklist below:</p>
+  </div>
+
+  <form id="blockWebsiteForm">
+    <input type="text" id="websiteInput" placeholder="Enter website URL">
+    <button type="submit">Block Website</button>
+  </form>
+  <form id="unblockWebsiteForm">
+    <input type="text" id="unblockWebsiteInput" placeholder="Enter website URL">
+    <button type="submit">Unblock Website</button>
+  </form>
+  
+  <button id="editBlocklistButton">Edit Blocklist</button>
+  <a href="report.html" id="reportButton">Report</a>
+  
+  <div id="editBlocklistContainer" style="display: none;">
+    <h2>Edit Blocklist</h2>
+    <!-- Content for editing blocklist -->
+  </div>
+
+  <div id="message"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

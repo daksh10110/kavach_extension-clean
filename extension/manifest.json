@@ -1,0 +1,62 @@
+{
+    "manifest_version": 3,
+    "name": "Image Count Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "./background/popup.html"
+    },
+    "permissions": [
+      "contextMenus",
+      "tabs",
+      "nativeMessaging",
+      "activeTab",
+      "storage",
+      "webRequest",
+      "webNavigation"  
+    ],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./content/images.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./content/text.js"],
+        "css": ["./content/text.css"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./content/audio.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./content/videos.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./content/website_block.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      }
+    ],
+    "host_permissions": [
+      "http://*/*/",
+      "https://*/*/",
+      "http://localhost:3001/*"
+      
+    ],
+    "background": {
+      "service_worker": "./background/background.js"
+    },
+    "options_ui": {
+      "page": "./background/options.html"
+    }  
+}

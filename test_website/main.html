@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obscenity Blocker Sample Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" onclick="navigateTo('imagePage')">Images</a></li>
+        <li><a href="#" onclick="navigateTo('videoPage')">Videos</a></li>
+        <li><a href="#" onclick="navigateTo('audioPage')">Audio</a></li>
+        <li><a href="#" onclick="navigateTo('textPage')">Text</a></li>
+      </ul>
+    </div>
+    <div id="contentContainer">
+      <div class="content" id="imagePage">
+        <h1>Welcome to the Obscenity Blocker Sample Blog</h1>
+        <h2>Images:</h2>
+        <div class="image-grid" id="imageGrid"></div>
+      </div>
+      <div class="content" id="videoPage">
+        <h1>Videos:</h1>
+        <div class="video-grid" id="videoGrid"></div>
+      </div>
+      <div class="content" id="audioPage">
+        <h1>Audio:</h1>
+        <div class="audio-grid" id="audioGrid"></div>
+      </div>
+      <div class="content" id="textPage">
+        <h1>Text:</h1>
+        <div class="text-grid" id="textGrid"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
